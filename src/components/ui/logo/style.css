@@ -1,0 +1,17 @@
+.logo__link {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .logo__link:hover {
+    text-decoration: none;
+  }
+  
+  .logo__text {
+    display: flex;
+    height: 30px;
+    margin-left: 12px;
+  }
