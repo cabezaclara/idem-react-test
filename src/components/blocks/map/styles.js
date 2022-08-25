@@ -23,11 +23,8 @@ export const StyledYandexMap = styled(Map)`
     height: 600px;
 
     @media ${(props) => props.theme.media.desktop} {
-        margin-left: 165px;
-        margin-right: 165px;
         margin-bottom: 72px;
-        height: 540px;
-        width: 1110px;
+        height: 540px;       
         border-radius: 8px;
         overflow: hidden;
     }
