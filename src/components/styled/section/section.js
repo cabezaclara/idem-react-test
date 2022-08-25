@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
 const Section = styled.section`
-  display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: ${(props) => props.theme.pagePadding};
-  padding-right: ${(props) => props.theme.pagePadding};
-  position: relative;
-  box-sizing: border-box;
+  margin-bottom: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media ${(props) => props.theme.media.tablet} {
+      margin-bottom: 72px;
+      padding-left: 39px;
+      padding-right: 39px;
+  }
+
+  @media ${(props) => props.theme.media.desktop} {
+      padding-left: 165px;
+      padding-right: 165px;
+  }
 `;
 
 export default Section;

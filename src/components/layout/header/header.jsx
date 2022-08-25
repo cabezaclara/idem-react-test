@@ -1,14 +1,17 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Logo from "../../ui/logo/logo";
 import Nav from "../nav/nav";
-import "./style.css";
+import { AppRoute } from "../../../const";
+import { StyledHeader } from "./styles";
 
 function Header() {
+  const pageUrl = useLocation().pathname;
   return (
-    <header className="header">
+    <StyledHeader isGrey={pageUrl===AppRoute.MAIN ? false : true} >
       <Logo />
       <Nav />
-    </header>
+    </StyledHeader>
   );
 }
 

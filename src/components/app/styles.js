@@ -13,10 +13,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     position: relative;
     min-height: 100%;
-    font-family: ${(props) => props.theme.fonts.family};
-    font-size: ${(props) => props.theme.sizes.defaultFontSize};
-    line-height: ${(props) => props.theme.sizes.defaultLineHeight};
-    font-weight: ${(props) => props.theme.fonts.mediumWeight};
+    font-family: ${(props) => props.theme.fonts.EuclidCircularB};
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 500;
     color: ${(props) => props.theme.colors.black};
   }
 `;
