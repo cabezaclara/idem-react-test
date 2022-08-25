@@ -3,19 +3,7 @@ import Title from "../../ui/title/title";
 import { Map } from "@pbe/react-yandex-maps";
 
 export const StyledTitle = styled(Title)`
-    padding-left: 15px;
-    padding-right: 15px;
     margin-bottom: 32px;
-
-    @media ${(props) => props.theme.media.tablet} {
-        padding-left: 39px;
-        padding-right: 39px;
-    }
-
-    @media ${(props) => props.theme.media.desktop} {
-        padding-left: 165px;
-        padding-right: 165px;
-    }
 `;
 
 export const StyledYandexMap = styled(Map)`
