@@ -40,13 +40,17 @@ export const Figure = styled.figure`
     position: relative;
     margin: 0;
     padding: 0;
-    clip-path: circle(270px at 50% 68%);
+    clip-path: circle(72% at 50% 68%);
+    width: 375px;
+    margin: 0 auto;
 
     & img {
         transform: translateX(-133px);
     };
 
     @media ${(props) => props.theme.media.tablet} {
+        width: auto;
+        margin: 0;
         clip-path: circle(329px at 65% 48%);
 
         & img {

@@ -35,8 +35,18 @@ function VacansiesSlider({cards}) {
           centeredSlides={true}
           grabCursor={true}
           breakpoints={{
+            580: {
+              slidesPerView: 2.25,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
             768: {
               slidesPerView: 2.25,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
+            1110: {
+              slidesPerView: 3.5,
               spaceBetween: 30,
               centeredSlides: false,
             },

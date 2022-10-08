@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Title, {TitleLevel} from "../../ui/title/title";
-import {Section} from "../../styled";
 import Button from "../../ui/button/button";
-import {StyledInstagramList, StyledInstagramElement} from "./styles";
+import {StyledSection, StyledInstagramList, StyledInstagramElement} from "./styles";
 
 const instagramElements = ["","" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,""];
 const InstagramElementCount = 5;
@@ -24,7 +23,7 @@ function Instagram() {
      detectSize
   , [addBoxes]);
   return (
-    <Section>
+    <StyledSection>
       <Title level={TitleLevel.H2}>мы в инстаграме</Title>
       <StyledInstagramList>
         {instaBoxes.map((index) => (
@@ -34,7 +33,7 @@ function Instagram() {
       {instagramElements.length > instaBoxes.length && (
         <Button onClick={() => setInstaShow(instaShow + addBoxes)}>показать ещё</Button>
       )}
-    </Section>
+    </StyledSection>
   );
 }
 

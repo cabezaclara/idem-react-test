@@ -1,5 +1,19 @@
 import styled from "styled-components";
-import {Ul, Li} from "../../styled";
+import {Ul, Li, Section} from "../../styled";
+
+export const StyledSection = styled(Section)`
+    box-sizing: border-box;
+    width: 375px;
+    margin: 0 auto;
+
+    @media ${(props) => props.theme.media.tablet} {
+        width: 768px;
+    }
+
+    @media ${(props) => props.theme.media.desktop} {
+        width: 1440px;
+    }
+`;
 
 export const StyledInstagramList = styled(Ul)`
     margin-top: 32px;
